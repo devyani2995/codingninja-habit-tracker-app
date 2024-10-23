@@ -1,13 +1,191 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(248, 239, 239);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#root {
+  width: 80%;
+  background: #3451A1;
+  border-right: 1px solid #323232;
+  border-left: 1px solid #323232;
+}
+
+/* .app-conatiner {
+  width: 90vw;
+  height: 94vh;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #3451A1;
+  box-shadow: 10px 10px 7px rgb(138, 126, 126);
+} */
+
+/* Styling for the header of the app */
+.appName {
+  text-align: center;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-shadow: 5px 5px #a63c3c;
+}
+
+/* ------- Styling for the Navbar Component -------*/
+.navbar-container {
+  align-items: center;
+  display: flex;
+  height: 65px;
+  padding: 0px 20px;
+  justify-content: space-between;
+  background-color: rgb(120 129 203);
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+}
+
+.right-nav h5 {
+  color: #DDDDDD;
+  margin-right: 10px;
+}
+
+
+.addhabitButton {
+  cursor: pointer;
+  color: white;
+  background-color: #3662CC;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 7px;
+}
+
+.addhabitButton:hover {
+  background-color: #a81ec0;
+  ;
+}
+
+/* Style for the modal of add-habit form */
+.modal-title {
+  margin-left: 36%;
+  color: black;
+}
+
+.form-label {
+  color: black;
+}
+
+/* ------- Styling for the HabitList Component -------*/
+.habitListContainer {
+  width: 90%;
+  max-height: 63%;
+  margin-top: 8vh;
+  margin-left: 4vw;
+}
+
+.habit {
+  width: 90%;
+  height: 11vh;
+  margin: auto;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  padding: 7px 19px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 20px;
+  align-items: center;
+  background-color: #051956;
+  color: #DBE2FF;
+}
+
+.habit-right {
+  display: flex;
+  align-items: center;
+  width: 15vw;
+  justify-content: space-around;
+}
+
+.dayComplete {
+  color: #a98f8f;
+  font-size: small;
+}
+
+.weekViewbtn {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3a12cd;
+  padding: 10px;
+  border-radius: 12px;
+  margin-right: 10px;
+  color: #bb15b0;
+}
+
+.weekViewbtn:hover {
+  background-color: #534099;
+  color: white;
+}
+
+/* ------- Styling for the HabitList Component -------*/
+.backBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6vh;
+  border-radius: 29px;
+  height: 6vh;
+  box-shadow: 2px 7px 25px 3px #272784;
+  margin-left: 6vw;
+}
+
+.backBtnIcon {
+  font-size: 2.2rem;
+  color: #d8c8c8;
+  line-height: 1px;
+}
+
+.backBtnIcon:hover {
+  color: #cb30e6;
+}
+
+.daysContainer {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 7vh;
+  margin-left: 11vw;
+  width: 50vw;
+  flex-wrap: wrap;
+}
+
+/* ------- Styling for the DayView Component -------*/
+.dayContainer {
+  height: 100px;
+  width: 150px;
+  background-color: #110f76;
+  border-radius: 20px;
+  padding: 5px;
+  margin-bottom: 3vh;
+    margin-left: 6vw;
+}
+
+p{
+  margin: 0%;
+}
+.circle-icon{
+  font-size: 24px;
+  margin: 5px 11px;
+  cursor: pointer;
+}
+.active{
+  color: #0B5ED7 ;
 }
