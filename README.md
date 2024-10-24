@@ -21,7 +21,7 @@ Habit tracker is a web application that allows to track multiple habits on a dai
 ## Steps to Install and Run
 
 1. **Clone the repository**:
-   git clone https://github.com/devyani2995/todo-app.git
+   git clone https://github.com/devyani2995/codingninja-habit-tracker-app.git
    cd todo-app
 
 2. **Install dependencies**:
