@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 //Importing Home component 
 import Home from "./components/Home";
-//Importing Home component 
+//Importing WeekView component 
 import WeekView from "./components/WeekView";
 //Importing Provider component from react-redux to give access to the Redux store in the app
 import { Provider } from "react-redux";
